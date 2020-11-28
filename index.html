@@ -1,9 +1,18 @@
-<html>
+<html lang="en-US">
     <head>
         <title>
             Sam Moghadam_home
         </title>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="./css/style.css">
+        <script src="https://kit.fontawesome.com/97808181ae.js" crossorigin="anonymous"></script>
+        <script src="js/app.js" ></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="img/Favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/Favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/Favicons/favicon-16x16.png">
+        <link rel="manifest" href="img/Favicons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
 
     </head>
     <body>
@@ -16,6 +25,7 @@
             <li><a href = "#projects">Projects</a></li>
             <li><a href = "#skills">Skills</a></li>
             <li><a href = "contact.html">Contacts</a></li>
+            <li><button class="toggle-button" onclick="myFunction()"><span class="button-text"></span></button></li>
             
         </ul>
      </nav> 
@@ -23,18 +33,19 @@
          <section id="about-me">
          <div class="column left-column">
         <h1>About Me</h1>
-            <p>Hi! I'm Ada, Countess of Lovelace and am an English mathematician and writer, chiefly known for my work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine.</p>
-
-            <p>I am one of the first to recognize that machines have applications beyond pure calculation, and to have published the first algorithm intended to be carried out by such a machine.</p>
+            <p>Hi! I'm Saman, a beginner programmer, financial advisor, project manager.</p>
 
             <p> In my free time I like to read about scientific developments, mathematics, and computational mathematics. I also like to take my chances of winning big.</p>
 
-            <p> Fun fact! I've been programing for 6,468,019,696 seconds!</p>
+            <p>
+                Fun fact! I've been programing for
+                <span id="time-container">6,468,238,242</span> seconds!
+              </p>
          </div>
          
          <div class="column right-column">  
             
-        <img src="./img/photo_2020-07-26_17-04-29.jpg"> 
+        <img id="myPhoto" onclick="myFunction2()" src="./img/photo_2020-07-26_17-04-29.jpg"> 
         </div>
         </section> 
         <section id="projects"><h2>Projects</h2>
@@ -64,14 +75,37 @@
         </section>
         <section id="skills">
             <h2>Skills</h2>
-            <div>
-
+            <div id="skills-container"> 
+                <i class="fab fa-react"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-git"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-node"></i>
+                <i class="fab fa-npm"></i>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-java"></i>
             </div>
         </section>
      </main>  
      <footer>
-        
+        <p>Based in L.A</p>
      </footer>
+     <script>
+        const timeContainer = document.getElementById("time-container");
+        const BIRTH_DAY = "07-27-2020";
+        const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+        const intlNumberFormatter = new Intl.NumberFormat("en-US");
+    
+        setInterval(() => {
+          const now = new Date();
+          const difference = Math.floor(
+            (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+          );
+    
+          timeContainer.innerText = intlNumberFormatter.format(difference);
+        }, 1000);
+    </script>
     
 
 
