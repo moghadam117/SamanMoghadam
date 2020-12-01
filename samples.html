@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title>
+            Sam Moghadam_contacts
+        </title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://kit.fontawesome.com/97808181ae.js" crossorigin="anonymous"></script>
+        <script src="js/app.js" ></script>
+
+    </head>
+    <body>
+     <nav>
+         <h1 id="title">Saman Moghadam</h1>
+        <ul>
+            
+            <li><a href = "index.html" class="nav-button">Home</a></li>
+            <li><a href = "index.html" class="nav-button">About</a></li>
+            <li><a href = "index.html" class="nav-button">Projects</a></li>
+            <li><a href = "index.html" class="nav-button">Skills</a></li>
+            <li><a href = "contact.html" class="nav-button">Contacts</a></li>
+            <li><button class="toggle-button" onclick="myFunction()"><span class="button-text"></span></button></li>
+            
+        </ul>
+     </nav>
+     <main>
+         <h2>Samples</h2>
+         <h2 style= text-align:center;>Flexbox</h2>
+         <div class="main" id="expertise">
+           <div class="spacer">
+             <div class="cards">
+               <div class="col">
+                 <img src="https://content.codecademy.com/projects/headlines/p1.jpg">
+                 <img src="https://content.codecademy.com/projects/headlines/p6.jpg">
+                 <img src="https://content.codecademy.com/projects/headlines/p8.jpg">
+               </div>
+               <div class="col">
+                 <img src="https://content.codecademy.com/projects/headlines/p2.jpg">
+                 <img src="https://content.codecademy.com/projects/headlines/p5.jpg">
+                 <img src="https://content.codecademy.com/projects/headlines/p7.jpg">
+               </div>
+               <div class="col">
+                 <img src="https://content.codecademy.com/projects/headlines/p3.jpg">
+                 <img src="https://content.codecademy.com/projects/headlines/p4.jpg">
+                 <img src="https://content.codecademy.com/projects/headlines/p9.jpg">
+                 <img src="https://content.codecademy.com/projects/headlines/p10.jpg">
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <br>
+       <hr>
+       <h2 style= text-align:center;>Grid</h2>
+       <div class="grid">
+         <div class="recipe a">
+           <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-1.png" />
+           <h2>CHOCOLATE MOUSSE</h2>
+           <p class="mins">20 mins</p>
+           <p class="description">
+             This delicious chocolate mousse will delight dinner guests of all ages!
+           </p>
+         </div>
+         <div class="recipe b">
+           <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-2.png" />
+           <h2>SMOKED LAMB WITH RICE</h2>
+           <p class="mins">120 mins</p>
+           <p class="description">
+             Want to feel like your favorite relative came over and made you dinner? This comfort meal of smoked lamb and rice will quickly become a weekend favorite!
+           </p>
+         </div>
+         <div class="recipe c">
+           <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-5.png" />
+           <h2>GOAT CHEESE SALAD</h2>
+           <p class="mins">25 mins</p>
+           <p class="description">
+             In addition to the full flavor of goat cheese, this salad includes kale, avocado, and farro to balance it out.
+           </p>
+         </div>
+         <div class="recipe d">
+           <img src="https://content.codecademy.com/courses/learn-css-grid/lesson-ii/image-4.png" />
+           <h2>CHICKEN SANDWICH</h2>
+           <p class="mins">45 mins</p>
+           <p class="description">
+             We've packed a lot into this one - shredded cabbage, carmalized onions, deep-fried chicken, chipotle mayo, half-sour pickles, and a toasted sesame bun will leave you thoroughly satisfied!
+           </p>
+         </div>
+       </div>
+    <h2 style= text-align:center;>Forms</h2>
+    <hr>
+    <section id="overlay">
+      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <hr>
+      <form >
+        <h1>Create a burger!</h1>
+        <section class="protein">
+          <label for="patty">What type of protein would you like?</label>
+          <input type="text" name="patty" id="patty">
+        </section>
+        <hr>
+        <section class="patties">
+          <label for="amount">How many patties would you like?</label>
+          <input type="number" name="amount" id="amount">
+        </section>
+        <hr>
+        <section class="cooked">
+          <label for="doneness">How do you want your patty cooked</label>
+          <br>
+          <span>Rare</span>
+          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+          <span>Well-Done</span>
+        </section>
+        <hr>
+        <section class="toppings">
+          <span>What toppings would you like?</span>
+          <br>
+          <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+          <label for="lettuce">Lettuce</label>
+          <input type="checkbox" name="topping" id="tomato" value="tomato">
+          <label for="tomato">Tomato</label>
+          <input type="checkbox" name="topping" id="onion" value="onion">
+          <label for="onion">Onion</label>
+        </section>
+        <hr>
+        <section class="cheesy">
+          <span>Would you like to add cheese?</span>
+          <br>
+          <input type="radio" name="cheese" id="yes" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="cheese" id="no" value="yes">
+          <label for="no">No</label>
+        </section>
+        <hr>
+        <section class="bun-type">
+          <label for="bun">What type of bun would you like?</label>
+          <select name="bun" id="bun">
+            <option value="sesame">Sesame</option>
+            <option value="potatoe">Potato</option>
+            <option value="pretzel">Pretzel</option>
+          </select>
+        </section>
+        <hr>
+        <section class="sauce-selection">
+          <label for="sauce">What type of sauce would you like?</label>
+          <input list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="ketchup"></option>
+            <option value="mayo"></option>
+            <option value="mustard"></option>
+          </datalist>
+        </section>
+        <hr>
+        <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+        <hr>
+        <section class="submission">
+          <input type="submit" value="Submit" id="submit">
+        </section>
+      </form>
+     </main>
+</html>
+
