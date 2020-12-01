@@ -1,7 +1,8 @@
 function myFunction() {
     var element = document.body;
-    element.classList.toggle("dark-mode");
     
+    element.classList.toggle("dark-mode");
+  
   }
 let timesClicked = 0;
 function myFunction2() {
